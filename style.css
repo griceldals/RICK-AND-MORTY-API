@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'R&M';
+    src: url(Fonts/get_schwifty.ttf);
+}
+
+@font-face {
+    font-family: 'Rockers';
+    src: url(Fonts/Rockers\ Garage.ttf);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+#filters {
+    text-align: center;
+}
+
+#filters input,
+#filters #status-filter {
+    padding: 8px 16px;
+    margin: 10px;
+    border: 0;
+    font-size: 18px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Asegura que haya espacio uniforme alrededor de los items */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor para evitar que ocupe toda la pantalla en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye los elementos uniformemente en el contenedor */
+    gap: 20px; /* Añade espacio entre los cards */
+}
+
+
+.character-card {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 15px;
+    background-color: #c9c893;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Rockers'; /* Cambiar el tipo de letra */
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card img {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: #dbad34;
+    margin-right: 20px; /* Espacio entre imagen y contenido */
+}
+
+.character-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.character-info p {
+    margin: 5px 0;
+}
+
+.character-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.character-status,
+.character-species,
+.character-location,
+.character-first-episode {
+    font-size: 16px;
+}
+
+#characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Dos columnas adaptativas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+body {
+    /* background-image: url('img/portalgif.gif'); */
+    background-size: cover; /* Para cubrir todo el fondo */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+    background-attachment: fixed; /* Para que la imagen no se mueva al hacer scroll */
+    background-color: #fff; /* En caso de que la imagen no cargue o se vea en pantallas anchas */
+    margin: 0;
+    padding: 0;
+}
+
+.Contenedor-Banner2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.Content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/1335145.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Titulo {
+    color: #fff;
+    font-size: 400%;
+    text-align: center;
+    font-family: "R&M";
+    margin-bottom: 20px; /* Ajusta este valor según sea necesario para dar espacio entre el título y el botón */
+}
+
+button {
+    width: 180px;
+    height: 45px;
+    color: #000;
+    font-size: 12px;
+    background: #537fa7;
+    border: 0;
+    border-radius: 50px;
+    outline: none;
+    margin-top: 30px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+  
+  button:hover {
+    background: #2c5476;
+    box-shadow: #fff;
+    color: #fff;
+  }
+
+  .Contenedor-Banner3 {
+    width: 100%;
+    height: 100vh;
+}
+
+.Content4 {
+    background: #9abd88;
+}
